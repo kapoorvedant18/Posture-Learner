@@ -5,7 +5,7 @@ import joblib
 import gradio as gr
 
 # Load model + label encoder
-model = joblib.load("xgboost_model.pkl")
+model = joblib.load("posture_model_xgb.pkl")
 encoder = joblib.load("label_encoder.pkl")
 
 # Mediapipe pose setup
@@ -66,3 +66,4 @@ if __name__ == "__main__":
         server_port=7860,
         share=False
     )
+
