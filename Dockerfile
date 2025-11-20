@@ -21,7 +21,7 @@ RUN apt-get update && apt-get install -y \
 COPY . .
 
 # Install mediapipe first if using local wheel
-RUN pip install --no-cache-dir ./mediapipe-0.10.7-cp310-cp310-manylinux_2_17_x86_64.whl
+#RUN pip install --no-cache-dir ./mediapipe-0.10.7-cp310-cp310-manylinux_2_17_x86_64.whl
 
 # Install other python dependencies
 RUN pip install --default-timeout=200 --retries=20 --no-cache-dir -r requirements.txt
