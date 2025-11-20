@@ -11,6 +11,8 @@ RUN apt-get update && apt-get install -y \
 
 COPY . .
 
+EXPOSE 7860
+
 RUN pip install --no-cache-dir -r requirements.txt
 
 CMD ["python", "app.py"]
