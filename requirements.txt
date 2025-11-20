@@ -1,9 +1,12 @@
-gradio==4.44.1
+gradio==3.44.3
+huggingface_hub==0.17.3
+fastapi==0.95.2
+pydantic==1.10.7
+uvicorn==0.22.0
+
 mediapipe==0.10.7
 opencv-python-headless==4.8.1.78
-xgboost
 numpy
 joblib
+xgboost
 scikit-learn==1.7.2
-uvicorn
-fastapi
