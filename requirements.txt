@@ -1,9 +1,10 @@
+scikit-learn==1.3.2
+joblib
+xgboost
+mediapipe==0.10.7
+opencv-python-headless==4.8.1.78
+numpy
 gradio==3.50.2
 huggingface_hub==0.17.3
 fastapi==0.103.2
 uvicorn==0.23.2
-opencv-python-headless==4.8.1.78
-mediapipe==0.10.7
-numpy
-joblib
-xgboost
