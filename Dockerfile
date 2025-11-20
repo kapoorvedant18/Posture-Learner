@@ -2,7 +2,7 @@ FROM python:3.10-slim
 
 WORKDIR /app
 
-# Install basic system dependencies
+# System dependencies for Mediapipe + WebRTC + OpenCV
 RUN apt-get update && apt-get install -y \
     ffmpeg \
     libsm6 \
@@ -11,7 +11,7 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --default-timeout=200 --retries=20 --no-cache-dir -r requirements.txt
 
 COPY . .
 
